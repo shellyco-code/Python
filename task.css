@@ -1,0 +1,35 @@
+*{margin:0;
+padding:0
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    margin:auto;
+    border: 2px solid red;
+    margin-top: 40px;
+}
+.abc{
+    text-align: center;
+    margin:auto;
+    color: blue;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.efg{
+    color: green;
+    font-weight: 200px;
+    padding: 10px;
+}
+
+.yyy{
+    color: blue;
+    padding: 10px;
+}
+
+.ttt{
+    color: red;
+    padding: 5px;
+}
