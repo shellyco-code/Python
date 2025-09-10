@@ -1,0 +1,85 @@
+# class- 5: conditional statements
+# if-else :
+"""
+if(condition):
+    #write your instructions here
+    """
+
+#Q1.given a number N, you are supposed to print "yes" or "no" based onthe fact whether it is even or odd.
+N = int(input("enter the number:"))
+if N%2 == 0:
+    print("yes")
+else:
+    print("no")
+
+#Q2.check which team wins a cricket
+# in this example, we will determine whether team B wins a cricket match by comparing their score againt the target set by team A.
+#match details:
+#team A's target score: 200
+#team B's target score:210
+team_a= 200
+team_b= 210
+if(team_a> team_b):
+    print("team a wins")
+elif(team_a>= team_b):
+    print("yes")
+else:
+    print("team b wins")
+
+
+#if-elif-lse:
+# if(condition-1):
+     #write something
+#elif(condition-2):
+    #write something
+#else(condition-3):
+    #write something
+
+#Q3.simple login system
+stored_username = "admin"
+entered_username = input("enter the username:").strip()
+entered_username = entered_username.strip()
+
+if(entered_username== stored_username):
+    print("login successsful")
+else:
+    print("login failed")
+
+#nested if else:
+"""
+if(condition-1):
+    if(condition-2):
+       # write something here
+
+"""
+#Q4. meal plan agewise 
+age = input("enter your age")
+age = int(age)
+
+
+if(age>=0 and age<=3):
+    print("recommended meal plan: toddler meal")
+elif(age>=4 and age<=12):
+    print("recommemded meal plan: kids meal")
+elif(age>=13 and age<=19):
+    print("recommended meal plan: teen meal")
+elif(age>=20 and age<=59):
+    print("recommended meal plan : adult meal")
+
+
+#Q5.movie ticket pricing
+age = int(input("enter your age"))
+if(age>=0 and age<=12):
+    print("price is $5")
+elif(age<=65):
+    print("price is $7")
+
+
+
+
+
+
+
+
+
+
