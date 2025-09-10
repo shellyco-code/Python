@@ -1,0 +1,43 @@
+def calculator():
+ print("welcome to calculator world")
+ print("select operation")
+ print("1.addition(+)")
+ print("2.substratction(-)")
+ print("3.multiplication(*)")
+ print("4.division(/)")
+ print("5.exponential(**)")
+ print("6.modulus(%)")
+ print("7.floor divison(//)")
+
+ try:
+  choice=input("enter your choice (1/2/3/4/5/6/7):")
+
+  if choice in ['1','2','3','4','5','6','7']:
+   num1=float(input("enter a number "))
+   num2=float(input("enter a number "))
+
+   if choice=='1':
+    print("the addition is ",(num1+num2))
+   elif choice=='2':
+    print("the substraction is ",(num1-num2))
+   elif choice=='3':
+    print("the multiplication is ",(num1*num2))
+   elif choice=='4':
+    print("the division is ",(num1/num2))
+   elif choice=='5':
+    print("the exponential is ",(num1**num2))
+   elif choice=='6':
+    print("themodulus is ",(num1%num2))
+   elif choice=='7':
+    print("the floor division is ",(num1//num2))
+  else:
+   print("enter the valid choice")
+ except ValueError:
+  print("enter valid numbers")
+
+calculator()
+
+
+
+
+
