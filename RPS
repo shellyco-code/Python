@@ -1,0 +1,31 @@
+import random
+
+choices=["rock","paper","scissors"]
+player_score=0
+computer_score=0
+
+while True:
+    player=input("enter rock paper or scissors,( type game over if you want to quiet game): ")
+    if player=="game over":
+        print("\nGameOver")
+        print("player won", player_score,"round(s).")
+        print("computer won", computer_score,"round(s).")
+    if player not in choices:
+        print("enter valid choice")
+        continue
+
+
+    computer=random.choice(choices)
+    print("computer chose:",computer)
+
+    if computer==player:
+        print("its a tie")
+    elif (player=="rock" and computer=="scissors") or\
+         (player=="paper" and computer=="rock") or\
+         (player=="scissors" and computer=="paper"):
+        print("YOU WIN !")
+        player_score=+1
+    else:
+        print("COMPUTER WINS !") 
+        computer_score=+1
+    
