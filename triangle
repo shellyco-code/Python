@@ -1,0 +1,12 @@
+def star_pattern(n):
+    result = []
+    for i in range(1, n + 1):
+        line = ' ' * (n - i) + '*' * (2 * i - 1)
+        result.append(line)
+    return '\n'.join(result)
+
+# Take input from the user
+if __name__ == "__main__":
+    n = int(input("Enter number of rows: "))
+    print(star_pattern(n))
+
